@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/EntityModel/obj
+/Database-Layer/bin/Debug/net8.0
+/BusinessLayer
+/Retailer-webApi/bin/Debug/net8.0
+/Retailer-webApi/obj
