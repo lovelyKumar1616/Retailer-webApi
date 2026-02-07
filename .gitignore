@@ -7,3 +7,6 @@
 /BusinessLayer
 /Retailer-webApi/bin/Debug/net8.0
 /Retailer-webApi/obj
+/EntityModel/bin/Debug/net8.0
+/.vs
+/Database-Layer/obj
