@@ -48,7 +48,7 @@ public partial class PosContext : DbContext
         {
             entity.ToTable("Customer");
 
-            entity.Property(e => e.Email)
+            entity.Property(e => e.EmailId)
                 .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.Name)

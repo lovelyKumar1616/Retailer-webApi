@@ -102,7 +102,7 @@ namespace Retailer_webApi.Controllers
             // Update properties
             existingCustomer.Name = customer.Name;
             existingCustomer.Phone = customer.Phone;
-            existingCustomer.Email = customer.Email;
+            existingCustomer.EmailId = customer.EmailId;
            
            
             repository.Update(existingCustomer);
@@ -136,7 +136,7 @@ namespace Retailer_webApi.Controllers
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomersByEmail(string email)
         {
             var repository = _unitOfWork.Repository<Customer>();
-            var customer = await repository.FindAsync(p => p.Email == email);
+            var customer = await repository.FindAsync(p => p.EmailId== email);
             return Ok(customer);
         }
 

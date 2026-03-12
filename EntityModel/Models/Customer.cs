@@ -15,7 +15,7 @@ public partial class Customer
 
     public string? Phone { get; set; }
 
-    public string? Email { get; set; }
+    public string? EmailId { get; set; }
     [JsonIgnore]
    public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }
